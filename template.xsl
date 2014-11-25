@@ -13,6 +13,10 @@ xmlns="http://www.w3.org/1999/xhtml">
     </section>
 </xsl:template>
 
+<xsl:template match="note" name="note">
+	<aside class="notes"><xsl:apply-templates /></aside>
+</xsl:template>
+
 <xsl:template match="/" name="main">
 <html>
   <head>
